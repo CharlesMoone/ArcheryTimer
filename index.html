@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>计时器</title>
+    <!-- <link rel="icon" href="/static/imgs/favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+  </head>
+
+  <body>
+    <div id="header">
+      <span id="logo-big">
+        <img src="./static/imgs/logo.png" class="logo-lg">
+      </span>
+      <span id="score" class="right">
+        <table>
+          <tr id="score-row-1">
+            <td id="name-1">Gao RuYi</td>
+            <td class="score"></td>
+            <td class="score"></td>
+            <td class="score"></td>
+            <td class="score"></td>
+            <td class="score"></td>
+          </tr>
+          <tr id="score-row-2">
+            <td id="name-2">Zhang Liang</td>
+            <td class="score"></td>
+            <td class="score"></td>
+            <td class="score"></td>
+            <td class="score"></td>
+            <td class="score"></td>
+          </tr>
+        </table>
+      </span>
+    </div>
+
+    <div id="timer-area" class="timer-area" align="center">
+      <div id="timer-1" class="timer left">
+        <div id="timer-count-1" class="timer-count left">--</div>
+        <div id="block-group-1" class="block-group right">
+          <div id="light-1" class="light"></div>
+        </div><!-- end div.block-group 1 -->
+        <div id="timer-status-1" class="timer-status">STOP</div>
+      </div><!-- end div.timer 1 -->
+
+      <div id="sep" class="vsep left"></div>
+
+      <div id="timer-2" class="timer right">
+        <div id="timer-count-2" class="timer-count left">--</div>
+        <div id="block-group-2" class="block-group right">
+          <div id="light-2" class="light"></div>
+        </div><!-- end div.block-group 2 -->
+        <div id="timer-status-2" class="timer-status">STOP</div>
+      </div><!-- end div.timer 2 -->
+    </div>
+
+    <div id="ctrl-bar" class="ctrl-bar">
+      <div id="btn-mode" class="left">
+        <select id="select-mode">
+        </select>
+      </div>
+      <div id="ctrl-pane" class="ctrl-pane left">
+        <div id="ctrl-player-1">
+          <input type="radio" id="players-1" name="players" />
+          <div id="btn-group-1" class="inline">
+            <button>1 RESET</button>
+            <button>1 SUSPEND</button>
+            <button>1 START</button>
+          </div>
+        </div>
+        <div id="ctrl-player-2">
+          <input type="radio" id="players-2" name="players" />
+          <div id="btn-group-2" class="inline">
+            <button>2 RESET</button>
+            <button>2 SUSPEND</button>
+            <button>2 START</button>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="copyright right">
+        <div class="inline">
+          <img src="./static/imgs/logo.png" class="logo-sm">
+        </div>
+      </div>
+    </div>
+
+    <script src="./static/js/jquery.min.js"></script>
+    <script src="./static/js/timer.js"></script>
+    <script src="./static/js/init.js"></script>
+  </body>
+</html>
