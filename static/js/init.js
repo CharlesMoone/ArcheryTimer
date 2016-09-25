@@ -125,7 +125,7 @@ function new_selector(){
 
     })
     .on("mouseout", function(){
-      out = "mode"
+      out = "mode";
       setTimeout(function(){
         d3.select("div.options").selectAll("li")
           .transition()
@@ -137,7 +137,6 @@ function new_selector(){
           .remove(); 
           show = false;
       }, 14500)  
-      
     })
 }
 

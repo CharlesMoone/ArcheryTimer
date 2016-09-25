@@ -1,19 +1,19 @@
 /* 加载字体 */
 
 @font-face {
-  src:url(/fonts/ccxyt.ttf);
+  src:url(../../fonts/ccxyt.ttf);
   font-family: 'ccxyt';
 }
 
 @font-face {
-  src:url(/fonts/impact.ttf);
+  src:url(../../fonts/impact.ttf);
   font-family: 'impact';
 }
 
-@font-face {
-  src:url(/fonts/wqy-microhei-lite.ttc);
-  font-family: 'wqy-microhei-lite';
-}
+/*@font-face {*/
+  /*src:url(/fonts/wqy-microhei-lite.ttc);*/
+  /*font-family: 'wqy-microhei-lite';*/
+/*}*/
 
 /* 提示灯和计数 */
 

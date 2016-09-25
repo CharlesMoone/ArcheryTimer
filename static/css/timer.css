@@ -1,0 +1,186 @@
+@font-face {
+    src:url(../../fonts/impact.ttf);
+    font-family: 'impact';
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    background: url('../imgs/logo.png') #000 20px 20px/150px 100px no-repeat;
+}
+header {
+    position: fixed;
+    top:0 ;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+table {
+    margin: 0 50px 0 0
+}
+td {
+    border: 1px solid white;
+    min-width: 60px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+tr td:first-child {
+    padding: 0 20px;
+}
+content, article, content div {
+    display: inherit;
+}
+content {
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 90vh;
+    color: white;
+    font-family: 'impact';
+}
+content article {
+    flex-flow: column nowrap;
+    padding: 0 50px;
+}
+content article:nth-child(2n) {
+    border-left: 2px solid white;
+}
+content div {
+    justify-content: center;
+    align-items: center;
+}
+content span {
+    padding: 0 20px 0 0;
+    font-size: 160px;
+}
+article > div:first-child span {
+    color: yellow;
+}
+article > div:last-child span {
+    font-size: 100px;
+}
+content img {
+    width: 200px;
+    height: 160px;
+}
+footer {
+    background: url('../imgs/bar.png') 0 0/100% 100% no-repeat;
+    display: inherit;
+    height: 10vh;
+}
+footer, footer * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+footer > div:first-child {
+    position: relative;
+    left: -300px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 0;
+    height: 10vh;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'BlinkMacSystemFont';
+    line-height: 4vh;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+footer > div:first-child div {
+    cursor: pointer;
+    width: 35px;
+    color: white;
+    height: 10vh;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+footer > div:first-child span {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+footer ul {
+    display: inherit;
+    flex-flow: row wrap;
+    width: 300px;
+}
+footer ul li {
+    cursor: pointer;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    margin: 5px;
+    background: rgba(198, 220, 224, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+footer ul li:hover {
+    background: #c6dce0;
+}
+footer > div:first-child:hover + article,
+footer > div:first-child:hover {
+    left: 0;
+}
+footer article {
+    position: relative;
+    left: -300px;
+    display: inherit;
+    flex-flow: row nowrap;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+footer article section {
+    display: inherit;
+    flex-flow: column nowrap;
+    color: white;
+    min-width: 100px;
+}
+footer section div {
+    display: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5vh;
+}
+footer section input[type=radio] {
+    margin: 0 10px 0 0;
+}
+footer section label {
+    cursor: pointer;
+}
+footer section button {
+    width: 100px;
+    height: 3vh;
+    margin: 0 5px;
+    border: 0;
+    background: #c6dce0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}

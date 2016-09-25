@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/timer.css" />
+</head>
+<body>
+    <header id="second_score" class="hidden">
+        <table>
+            <tr>
+                <td>Gao RuYi</td>
+                <td>
+                    <select name="score" id="score_one_1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_one_2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_one_3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_one_4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_two_5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Zhang Liang</td>
+                <td>
+                    <select name="score" id="score_two_1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_two_2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_two_3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_two_4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="score" id="score_two_5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <content>
+        <article>
+            <div>
+                <span>--</span>
+                <img src="static/imgs/lightR.png" alt="no start" />
+            </div>
+            <div><span>STOP</span></div>
+        </article>
+        <article id="second_timer" class="hidden">
+            <div>
+                <span>--</span>
+                <img src="static/imgs/lightR.png" alt="no start" />
+            </div>
+            <div><span>STOP</span></div>
+        </article>
+    </content>
+    <footer>
+        <div>
+            <ul>
+                <li>10</li>
+                <li>20</li>
+                <li>40</li>
+                <li>60</li>
+                <li>80</li>
+                <li>100</li>
+                <li>120</li>
+                <li>240</li>
+            </ul>
+            <div>
+                <span>MODE</span>
+            </div>
+        </div>
+        <article>
+            <section>
+                <div>
+                    <input type="radio" name="type" id="single" checked="checked" />
+                    <label for="single">单人模式</label>
+                </div>
+                <div>
+                    <input type="radio" name="type" id="double" />
+                    <label for="double">双人模式</label>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <span>1号</span>
+                    <button>RESET</button>
+                    <button>SUSPEND</button>
+                    <button>START</button>
+                </div>
+                <div id="second_person" class="disabled">
+                    <span>2号</span>
+                    <button disabled="disabled">RESET</button>
+                    <button disabled="disabled">SUSPEND</button>
+                    <button disabled="disabled">START</button>
+                </div>
+            </section>
+        </article>
+    </footer>
+</body>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/timer_new.js"></script>
+</html>

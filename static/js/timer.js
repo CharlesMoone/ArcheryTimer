@@ -1,4 +1,4 @@
-                                                                                                       function countDown(timer) {
+function countDown(timer) {
   if (timer.t <= 0) {
     timer.stop();
   } else if (timer._active) {
