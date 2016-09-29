@@ -90,22 +90,22 @@
     <content>
         <article>
             <div>
-                <span>--</span>
+                <span id="timer_first">--</span>
                 <img src="static/imgs/lightR.png" alt="no start" />
             </div>
-            <div><span>STOP</span></div>
+            <div><span id="status_first">STOP</span></div>
         </article>
         <article id="second_timer" class="hidden">
             <div>
-                <span>--</span>
+                <span id="timer_second">--</span>
                 <img src="static/imgs/lightR.png" alt="no start" />
             </div>
-            <div><span>STOP</span></div>
+            <div><span id="status_second">STOP</span></div>
         </article>
     </content>
     <footer>
         <div>
-            <ul>
+            <ul id="time_type">
                 <li>10</li>
                 <li>20</li>
                 <li>40</li>
@@ -131,7 +131,7 @@
                 </div>
             </section>
             <section>
-                <div>
+                <div id="first_person">
                     <span>1号</span>
                     <button>RESET</button>
                     <button>SUSPEND</button>
@@ -148,5 +148,6 @@
     </footer>
 </body>
 <script src="static/js/jquery.min.js"></script>
+<script src="static/js/timer.js"></script>
 <script src="static/js/timer_new.js"></script>
 </html>

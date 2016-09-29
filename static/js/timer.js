@@ -9,13 +9,13 @@ function countDown(timer) {
   }
 }
 
-function Timer(nth, mode) {
+function Timer(timer, status, mode) {
   // 计时器相关
   this._mode = mode;
   // 运动员相关
-  this.nth = nth;
-  this.count = $('#timer-count-' + this.nth);
-  this.status = $('#timer-status-' + this.nth);
+  this.timer = timer;
+  this.count = $(this.timer);
+  this.status = $(status);
   this.light = $('#light-' + this.nth);
   // 函数
   this.countDown = function() { countDown(this); };
@@ -63,7 +63,7 @@ function Timer(nth, mode) {
     this._remain = 0;
     this.count.html(this.t);
     this.status.html('STOP');
-    this.setColor('R');
+    // this.setColor('R');
   };
   this.reset = this._init;
   this._init();

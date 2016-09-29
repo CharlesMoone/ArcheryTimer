@@ -46,6 +46,7 @@ content {
 content article {
     flex-flow: column nowrap;
     padding: 0 50px;
+    width: 500px;
 }
 content article:nth-child(2n) {
     border-left: 2px solid white;
