@@ -29,6 +29,16 @@ td {
     text-align: center;
     vertical-align: middle;
 }
+table input {
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    line-height: 25px;
+    font-size: 20px;
+}
+td select {
+    font-size: 20px;
+}
 tr td:first-child {
     padding: 0 20px;
 }
@@ -184,4 +194,11 @@ footer section button {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+}
+footer article+div {
+    text-align: right;
+    width: 200px;
+}
+footer article+div img {
+    height: 10vh;
 }
